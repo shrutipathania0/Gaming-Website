@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GStreamo Tournament Registration</title>
+    <style>
+        /* Basic Styles */
+        body, html {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://wallpaperaccess.com/full/329583.jpg') no-repeat center center fixed; /* Gaming wallpaper background */
+            background-size: cover;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            color: #fff;
+            border-bottom: 3px solid #45a247;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            padding: 15px 30px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        nav ul li a:hover {
+            color: #ff1e56;
+        }
+
+        /* Gaming Neon Button Styles */
+        nav ul li a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #ff1e56;
+            transition: width 0.4s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* GStreamo Logo Styles */
+        .logo {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            transition: transform 0.4s ease-in-out;
+        }
+        .logo:hover {
+            transform: rotate(360deg);
+        }
+
+        /* Section Styles */
+        .section-title {
+            font-size: 2em;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            color: #ffcc00;
+        }
+        .games-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        /* Game Card Styles */
+        .game-card {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #45a247;
+            border-radius: 15px;
+            width: 250px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.4s, border-color 0.4s;
+        }
+        .game-card:hover {
+            transform: scale(1.1);
+            border-color: #ff1e56;
+        }
+        .game-logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px #ff1e56;
+        }
+        .description {
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #999;
+            border-top: 3px solid #45a247;
+        }
+
+        /* Responsive Design */
+        @media only screen and (max-width: 768px) {
+            .games-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <img src="GStreamo round logo.jpg" alt="GStreamo Logo" class="logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog Post</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Website Header -->
+    <header>
+        <h1>GStreamo Tournament Registration</h1>
+    </header>
+
+    <!-- Mobile Games Section -->
+    <h2 class="section-title">Mobile Games</h2>
+    <div class="games-section">
+        <!-- BGMI Example Card -->
+        <div class="game-card">
+            <img src="BGMI logo.jpeg" alt="BGMI Logo" class="game-logo">
+            <h3>BGMI</h3>
+            <p class="description">Battlegrounds Mobile India (BGMI) is a battle royale game where players compete to be the last one standing.</p>
+        </div>
+        <!-- Free Fire -->
+        <div class="game-card">
+            <img src="Free fire logo.jpeg" alt="Free Fire Logo" class="game-logo">
+            <h3>Free Fire</h3>
+            <p class="description">Free Fire is a fast-paced battle royale with quick matches lasting 10 minutes each.</p>
+        </div>
+        
+        <!-- Call of Duty -->
+        <div class="game-card">
+            <img src="COD logo.jpeg" alt="Call of Duty Logo" class="game-logo">
+            <h3>Call of Duty: Mobile</h3>
+            <p class="description">Call of Duty: Mobile brings console-style action to your fingertips, featuring diverse modes and maps.</p>
+        </div>
+        
+        <!-- PUBG New State -->
+        <div class="game-card">
+            <img src="New State logo.jpeg" alt="PUBG New State Logo" class="game-logo">
+            <h3>PUBG New State</h3>
+            <p class="description">PUBG New State is a futuristic twist on the classic battle royale formula, set in the year 2051.</p>
+        </div>
+        
+        <!-- Clash of Clans -->
+        <div class="game-card">
+            <img src="COC logo.jpeg" alt="Clash of Clans Logo" class="game-logo">
+            <h3>Clash of Clans</h3>
+            <p class="description">Clash of Clans is a strategy game where players build bases, train troops, and battle opponents.</p>
+        </div>
+        
+        <!-- Clash Royale -->
+        <div class="game-card">
+            <img src="Clash Royale logo.jpeg" alt="Clash Royale Logo" class="game-logo">
+            <h3>Clash Royale</h3>
+            <p class="description">Clash Royale is a real-time multiplayer game featuring characters from the Clash universe.</p>
+        </div>
+        
+        <!-- Brawl Stars -->
+        <div class="game-card">
+            <img src="Brawl Stars logo.jpeg" alt="Brawl Stars Logo" class="game-logo">
+            <h3>Brawl Stars</h3>
+            <p class="description">Brawl Stars is a fast-paced 3v3 multiplayer game with unique brawlers and diverse modes.</p>
+        </div>
+    </div>
+
+    <!-- PC Games Section -->
+    <h2 class="section-title">PC Games</h2>
+    <div class="games-section">
+        <!-- Valorant Example Card -->
+        <div class="game-card">
+            <img src="Valorant logo.png" alt="Valorant Logo" class="game-logo">
+            <h3>Valorant</h3>
+            <p class="description">Valorant is a tactical shooter where teams of agents fight using abilities and weapons.</p>
+        </div>
+        <!-- CSGO -->
+        <div class="game-card">
+            <img src="CSGO.png" alt="CSGO Logo" class="game-logo">
+            <h3>CSGO</h3>
+            <p class="description">CSGO is a popular first-person shooter known for its tactical gameplay and competitive scene.</p>
+        </div>
+
+        <!-- CSGO2 -->
+        <div class="game-card">
+            <img src="CSGO 2 logo.jpeg" alt="CSGO2 Logo" class="game-logo">
+            <h3>CSGO 2</h3>
+            <p class="description">CSGO 2 is an enhanced version of CSGO, featuring better graphics and improved mechanics.</p>
+        </div>
+
+        <!-- League of Legends -->
+        <div class="game-card">
+            <img src="League Of Legends 01 logo.jpeg" alt="League of Legends Logo" class="game-logo">
+            <h3>League of Legends</h3>
+            <p class="description">League of Legends is a fast-paced MOBA game with a deep roster of champions and strategic gameplay.</p>
+        </div>
+
+        <!-- Fortnite -->
+        <div class="game-card">
+            <img src="Fortnite.png" alt="Fortnite Logo" class="game-logo">
+            <h3>Fortnite</h3>
+            <p class="description">Fortnite is a popular battle royale game known for its building mechanics and vibrant visuals.</p>
+        </div>
+
+        <!-- Rocket League -->
+        <div class="game-card">
+            <img src="Rocket League logo.jpeg" alt="Rocket League Logo" class="game-logo">
+            <h3>Rocket League</h3>
+            <p class="description">Rocket League is a unique sports game where cars play soccer, combining speed and skill.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GStreamo | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

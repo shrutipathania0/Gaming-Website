@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GStreamo - About Us</title>
+    <style>
+        /* Basic Styles */
+        body, html {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            color: #fff;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+            padding: 15px 30px;
+            border-bottom: 3px solid #ff1e56;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        nav ul li a:hover {
+            color: #ff1e56;
+        }
+
+        /* Navigation Link Underline Effect */
+        nav ul li a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #ff1e56;
+            transition: width 0.3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* GStreamo Logo */
+        .logo {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            transition: transform 0.4s ease-in-out;
+        }
+        .logo:hover {
+            transform: rotate(360deg);
+        }
+
+        /* Page Header */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            border-bottom: 3px solid #45a247;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        /* About Us Content */
+        .content {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px 40px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+        }
+        .content h2 {
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        #s1{
+            color: #ffcc00;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Team Section */
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .team-member {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            width: 250px;
+            margin: 15px;
+            border-radius: 15px;
+            transition: transform 0.4s, box-shadow 0.4s;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.7);
+        }
+        .member-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .member-name {
+            font-size: 1.3em;
+            margin: 15px 0;
+            color: #ffcc00;
+        }
+        .member-role {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #45a247;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.9);
+            color: #999;
+            border-top: 3px solid #45a247;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div>
+            <img src="GStreamo round logo.jpg" alt="GStreamo Logo" class="logo"> <!-- Replace with your circular logo -->
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog Post</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <header>
+        <h1>About GStreamo</h1>
+    </header>
+
+    <!-- About Us Content -->
+    <div class="content">
+        <h2>Who We Are</h2>
+        <p>
+            GStreamo is a platform built for gamers, by gamers. Our goal is to create a unified community where players from all around the world can come together, compete, and share their passion for gaming. Whether you’re a casual player or a professional, our tournaments provide an exciting opportunity to showcase your skills and connect with like-minded individuals.
+        </p>
+        <h2>Our Vision</h2>
+        <p>
+            At GStreamo, we believe that gaming is more than just a pastime – it’s a way to challenge yourself, push your limits, and experience the thrill of competition. We aim to create an inclusive space that nurtures talent, fosters camaraderie, and, most importantly, celebrates the spirit of gaming.
+        </p>
+        <h2>About Our Webpage</h2>
+        <p>
+            GStreamo is a dynamic and immersive platform designed to cater to the growing community of gaming enthusiasts worldwide. Our website serves as a centralized hub for gamers who are passionate about competing in esports tournaments, whether on mobile or PC. The site is carefully crafted to provide an engaging experience, enabling users to easily navigate through different sections, register for tournaments, and stay updated on the latest gaming trends. With an emphasis on creating a seamless user experience, GStreamo ensures that visitors find it easy to interact with the various elements of the site, making it more than just a tournament registration page — it’s a vibrant digital ecosystem built around gaming.
+        </p>
+        <p>
+            Our primary focus is to foster a thriving gaming community that encompasses players of all skill levels. Whether a novice looking to explore the world of competitive gaming or a seasoned professional aiming to showcase your expertise, GStreamo offers a welcoming platform. The website is structured into various categories, segregating games based on mobile and PC platforms, which simplifies navigation and makes it convenient for gamers to locate the specific tournaments they are interested in. With popular mobile games like BGMI, Free Fire, Call of Duty, and PC games such as Valorant, CSGO, and Fortnite, the site provides a diverse set of competitive options for players to engage with.
+        </p>
+        <p>
+            The aesthetic appeal of our website is designed to reflect the electrifying atmosphere of esports. With a dark theme, neon accents, and interactive elements, every aspect is tailored to invoke the thrill and excitement of competitive gaming. The layout is modern and user-centric, ensuring that each game section has its unique background and theme. This helps in distinguishing the different game categories, making the user experience both visually engaging and intuitive.
+        </p>
+        <h2>Objectives of Our Webpage</h2>
+        <p>
+            <ol>
+                <p>
+                    <li>Creating a Unified Gaming Community: The primary objective of the GStreamo webpage is to serve as a meeting ground for gamers from all walks of life. By providing a platform where players can register for tournaments, discuss strategies, and form teams, GStreamo aims to bridge the gap between casual gamers and esports professionals. The inclusion of both mobile and PC game categories ensures that there’s something for everyone, promoting inclusivity and community growth.</li>
+                </p>
+                <p>
+                    <li>Streamlining Tournament Registration: One of the key goals of our website is to simplify the tournament registration process. Each game has its own dedicated section, with detailed descriptions and easy-to-use registration forms, making it convenient for users to sign up and participate. This structured approach helps in reducing confusion and provides clarity on the available tournaments and their requirements.</li>
+                </p>
+                <p>    
+                    <li>Encouraging Healthy Competition: GStreamo is built with the vision of promoting healthy competition within the gaming community. Our tournaments are designed to bring out the best in players, pushing them to enhance their skills and achieve new heights. By offering a platform where gamers can compete, showcase their talent, and win rewards, GStreamo strives to elevate the status of competitive gaming.</li>
+                </p>    
+                <p>    
+                    <li>Showcasing Esports as a Viable Career Path: Another major objective of GStreamo is to highlight esports as a legitimate career option. Through our tournaments and events, we provide a stage for aspiring professionals to get noticed by a wider audience. By encouraging talent and providing opportunities for growth, GStreamo aims to contribute to the recognition of esports as a serious profession.</li>
+                </p>    
+                <p>    
+                    <li>Providing a Safe and Secure Environment: Lastly, the safety and security of our users are paramount. GStreamo is designed with robust security features to ensure that user data is protected. Additionally, our tournament rules and regulations are enforced to maintain a fair and transparent gaming environment for all participants.</li>
+                </p>
+            </ol>
+
+        </p>
+        <P id="s1">
+            Overall, GStreamo is more than just a tournament registration site; it’s a comprehensive platform that champions the spirit of gaming and aims to be the go-to place for all things related to competitive esports.
+        </P>
+
+        <!-- Team Section -->
+        <h2>Meet Our Team</h2>
+        <div class="team">
+            <!-- Example Team Member 1 -->
+            <div class="team-member">
+                <img src="CEO.jpg" alt="Team Member" class="member-img">
+                <h3 class="member-name">Siddharth Shah</h3>
+                <p class="member-role">Founder & CEO</p>
+                <p>Siddharth is a lifelong gamer with a passion for competitive esports. He founded GStreamo to provide gamers with a platform to showcase their skills.</p>
+            </div>
+
+            <!-- Example Team Member 2 -->
+            <div class="team-member">
+                <img src="Cheif Technology Officer.jpg" alt="Team Member" class="member-img">
+                <h3 class="member-name">Rishabh Arya</h3>
+                <p class="member-role">Chief Technology Officer</p>
+                <p>Rishabh is an experienced developer and tech enthusiast who leads the team in creating a seamless, user-friendly platform for all gamers.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 GStreamo | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
